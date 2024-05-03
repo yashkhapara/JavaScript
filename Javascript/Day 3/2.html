@@ -1,0 +1,38 @@
+<!-- 2.Find Simple Interest. -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <center> <h1>Simple Interest</h1> </center>
+<br><br>
+
+<center>
+    <label for="">Enter Principal amount :</label><br>
+    <input type="text" id="in1">
+<br><br><br>
+    <label for="">Enter Rate of Interest :</label><br>
+    <input type="text" name="" id="in2">
+<br><br><br>
+    <label for="">Enter Time Of Duration :</label><br>
+    <input type="text" id="in3">
+<br><br><br>
+    <h1 id="ans"></h1><br>
+</center>
+</body>
+</html>
+
+<script>
+    let p=document.getElementById("in1").value
+    let r=document.getElementById("in2").value
+    let i=document.getElementById("in3").value
+
+    let si=(+p * +r * +i)/100
+
+    document.getElementById("ans").innerHTML=si
+</script>
