@@ -1,0 +1,50 @@
+<!-- **Grading System** -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1 style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif">Enter score</h1>
+    <input type="text" id="in1">
+
+    <h1 id="ans" style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Score</h1>
+</body>
+
+</html>
+
+<script>
+
+    let scr = document.getElementById("in1").value
+
+
+    if (scr === "") {
+        document.getElementById("ans").innerHTML = "Enter valid inpiut"
+    }
+    else {
+        if (scr >= 90 && scr <= 100) {
+            document.getElementById("ans").innerHTML = "A"
+        }
+        else if (scr >= 80 && scr <= 89) {
+            document.getElementById("ans").innerHTML = "B"
+        }
+        else if (scr >= 70 && scr <= 79) {
+            document.getElementById("ans").innerHTML = "C"
+        }
+        else if (scr >= 60 && scr <= 69) {
+            document.getElementById("ans").innerHTML = "D"
+        }
+        else {
+            document.getElementById("ans").innerHTML = "F"
+        }
+    }
+
+</script>
